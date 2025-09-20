@@ -1,63 +1,89 @@
 # BakeWise
 
----
+## 🇵🇹 Português
 
-## 🇵🇹 Versão em Português
+## Descrição Curta
+O **BakeWise** é uma plataforma inovadora que aplica inteligência artificial para otimizar a gestão de padarias. O sistema prevê a procura de produtos, ajuda a reduzir desperdício e permite uma tomada de decisão mais eficiente na gestão de stock, contribuindo para uma operação mais rentável e sustentável.
 
-### Short Description
-BakeWise é uma plataforma que utiliza inteligência artificial para otimizar a gestão de padarias, ajudando a prever a procura de produtos e reduzir desperdício.
+## Problema
+As padarias enfrentam desafios constantes na gestão de inventário e vendas:  
+- Muitas vezes há **excesso de stock**, resultando em desperdício de produtos perecíveis.  
+- Em outros casos, há **falta de produtos populares**, levando à perda de vendas e insatisfação dos clientes.  
+- A tomada de decisão é geralmente baseada em **experiência ou estimativas manuais**, sem apoio de dados históricos ou análises preditivas.  
 
-### Problema & Solução
-**Problema:** Padarias frequentemente enfrentam excesso de stock ou falta de produtos populares, levando a desperdício ou perda de vendas.  
-**Solução:** O BakeWise analisa dados históricos de vendas e prevê a procura futura de produtos como croissants, muffins e pão, permitindo decisões de stock mais precisas e eficientes.
+Esses problemas afetam tanto a rentabilidade quanto a reputação do negócio, tornando difícil manter um equilíbrio entre oferta e procura.
 
-### Tecnologias & Dados
-- **Frontend:** HTML, CSS, JavaScript  
-- **Visualização:** Chart.js para gráficos de histórico e previsão  
-- **Backend/IA (conceito):** Algoritmos de previsão baseados em dados históricos de vendas  
-- **Dados:** Simulados ou reais de vendas de padarias
+## Solução
+O **BakeWise** resolve esses desafios aplicando inteligência artificial e análise de dados:  
+- Analisa **histórico de vendas** para identificar padrões de procura.  
+- Gera **previsões de vendas futuras** para produtos como croissants, muffins e pão.  
+- Fornece **insights claros** que permitem às padarias:  
+  - Ajustar pedidos e produção de forma precisa.  
+  - Reduzir desperdício de alimentos.  
+  - Aumentar a disponibilidade de produtos populares e, consequentemente, a satisfação do cliente.  
+- A solução é **simples, visual e acessível**, com gráficos intuitivos e recomendações acionáveis.
 
-### Live Demo
-- O site está disponível publicamente em: [https://guilhermecruzpt.github.io/BakeWise](https://guilhermecruzpt.github.io/BakeWise)  
+## Tecnologias e Dados
+- **Frontend:** HTML, CSS e JavaScript  
+- **Visualização:** Chart.js para apresentar histórico de vendas e previsões futuras  
+- **Backend/IA (conceito):** Algoritmos de previsão baseados em dados históricos, com possibilidade futura de integração com machine learning  
+- **Dados:** Simulados para demonstração; possibilidade de integração com dados reais de padarias
 
-### Roadmap / Próximos Passos
-- Integrar dados reais de padarias através de API  
-- Melhorar a precisão das previsões com modelos de machine learning avançados  
-- Adicionar funcionalidades de gestão de inventário e alertas de stock baixo  
-- Criar contas de utilizador e dashboards personalizados para cada padaria  
-- Implementar notificações automáticas para planeamento de compras
+## Demo Online
+O site está publicamente disponível em: [https://guilhermecruzpt.github.io/BakeWise](https://guilhermecruzpt.github.io/BakeWise)
 
-### Optional / Nice to Have
-- Video demo de 2 minutos mostrando a previsão de vendas e interface do usuário (em desenvolvimento)  
-- Tutorial passo-a-passo para testar a aplicação localmente
+## Roadmap / Próximos Passos
+1. Integrar dados reais de padarias através de API para previsões mais precisas.  
+2. Melhorar a precisão das previsões usando **modelos avançados de machine learning**.  
+3. Adicionar funcionalidades de **gestão de inventário**, alertas automáticos de stock baixo e relatórios detalhados.  
+4. Criar **contas de utilizador e dashboards personalizados** para cada padaria.  
+5. Implementar **notificações automáticas** para auxiliar no planeamento de compras e produção.  
 
----
+## Optional / Diferenciais
+- Video demo de 2 minutos mostrando previsões de vendas e interface do usuário (em desenvolvimento).  
+- Tutorial passo-a-passo para testar a aplicação localmente.  
+- Integração futura com sistemas de ponto de venda (POS) para atualizações automáticas de stock.
 
-## 🇬🇧 English Version
+## 🇺🇸 English (US)
 
-### Short Description
-BakeWise is a platform that uses artificial intelligence to optimize bakery management, helping to predict product demand and reduce waste.
+## Short Description
+**BakeWise** is an innovative platform that leverages artificial intelligence to optimize bakery management. The system predicts product demand, helps reduce waste, and enables data-driven stock management, resulting in more profitable and sustainable operations.
 
-### Problem & Solution
-**Problem:** Bakeries often face overstock or shortage of popular products, leading to waste or lost sales.  
-**Solution:** BakeWise analyzes historical sales data and predicts future demand for products such as croissants, muffins, and bread, enabling more accurate and efficient stock decisions.
+## Problem
+Bakeries face ongoing challenges in inventory and sales management:  
+- Often there is **overstock**, leading to perishable product waste.  
+- At other times, there is **stock shortage** of popular items, resulting in lost sales and dissatisfied customers.  
+- Decision-making is typically based on **experience or manual estimates**, without support from historical data or predictive analysis.  
 
-### Technologies & Data
-- **Frontend:** HTML, CSS, JavaScript  
-- **Visualization:** Chart.js for historical and forecast charts  
-- **Backend/AI (concept):** Forecasting algorithms based on historical sales data  
-- **Data:** Simulated or real bakery sales data
+These issues impact both profitability and customer satisfaction, making it difficult to balance supply and demand effectively.
 
-### Live Demo
-- The site is publicly available at: [https://guilhermecruzpt.github.io/BakeWise](https://guilhermecruzpt.github.io/BakeWise)  
+## Solution
+**BakeWise** addresses these challenges by applying AI and data analytics:  
+- Analyzes **historical sales data** to identify demand patterns.  
+- Generates **future sales forecasts** for products such as croissants, muffins, and bread.  
+- Provides **clear insights** enabling bakeries to:  
+  - Adjust orders and production accurately.  
+  - Reduce food waste.  
+  - Ensure popular products are available, increasing customer satisfaction.  
+- The solution is **simple, visual, and accessible**, with intuitive charts and actionable recommendations.
 
-### Roadmap / Next Steps
-- Integrate real bakery data via API  
-- Improve forecast accuracy with advanced machine learning models  
-- Add inventory management features and low-stock alerts  
-- Create user accounts and personalized dashboards for each bakery  
-- Implement automated notifications for purchase planning
+## Technologies & Data
+- **Frontend:** HTML, CSS, and JavaScript  
+- **Visualization:** Chart.js for historical and forecasted sales charts  
+- **Backend/AI (conceptual):** Forecast algorithms based on historical sales data, with future potential for machine learning integration  
+- **Data:** Simulated for demonstration; can integrate with real bakery sales data
 
-### Optional / Nice to Have
-- 2-minute video demo showcasing sales forecasting and user interface (in development)  
-- Step-by-step guide for testing the application locally
+## Live Demo
+The site is publicly available at: [https://guilhermecruzpt.github.io/BakeWise](https://guilhermecruzpt.github.io/BakeWise)
+
+## Roadmap / Next Steps
+1. Integrate real bakery sales data via API for more accurate forecasts.  
+2. Improve forecast accuracy using **advanced machine learning models**.  
+3. Add **inventory management features**, low-stock alerts, and detailed reporting.  
+4. Create **user accounts and personalized dashboards** for each bakery.  
+5. Implement **automatic notifications** to assist with purchasing and production planning.
+
+## Optional / Nice-to-Have
+- 2-minute demo video showing sales forecasts and the user interface (in development).  
+- Step-by-step guide to test the application locally.  
+- Future integration with Point-of-Sale (POS) systems for automatic stock updates.
