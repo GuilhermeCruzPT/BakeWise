@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Forecast for Bakeries</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;700&display=swap"
+        rel="stylesheet" />
+    <link href="bakewise.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Animated Grid Background -->
+    <div class="grid-bg"></div>
+    <div class="gradient-overlay"></div>
+    <div class="scanlines"></div>
+
+    <!-- Animated Shapes -->
+    <div class="shapes-container">
+        <div class="shape shape-circle"></div>
+        <div class="shape shape-triangle"></div>
+        <div class="shape shape-square"></div>
+    </div>
+
+    <!-- Floating Particles -->
+    <div id="particles"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo-link">
+                <!-- Antigo logo SVG
+                <svg class="logo-svg" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color: #ff5e00; stop-opacity: 1" />
+                            <stop offset="100%" style="stop-color: #00b2ff; stop-opacity: 1" />
+                        </linearGradient>
+                    </defs>
+                    <polygon points="20,2 38,14 38,26 20,38 2,26 2,14" fill="none" stroke="url(#logoGradient)"
+                        stroke-width="2" />
+                    <polygon points="20,8 32,16 32,24 20,32 8,24 8,16" fill="url(#logoGradient)" opacity="0.3" />
+                    <circle cx="20" cy="20" r="3" fill="url(#logoGradient)" />
+                </svg>
+                 -->
+                <img src="images/bakewise.svg" alt="BakeWise Logo" class="logo-svg">
+                <span class="logo-text">BakeWise</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#forecast">Forecast Example</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="text-rotator">
+                <div class="text-set active">
+                    <h1 class="glitch-text" data-text="SMART BAKERY">SMART BAKERY</h1>
+                    <p class="subtitle">Predicting exactly what your bakery needs</p>
+                </div>
+                <div class="text-set">
+                    <h1 class="glitch-text" data-text="REDUCE WASTE">REDUCE WASTE</h1>
+                    <p class="subtitle">
+                        Minimize overproduction and save costs with AI
+                    </p>
+                </div>
+                <div class="text-set">
+                    <h1 class="glitch-text" data-text="BOOST SALES">BOOST SALES</h1>
+                    <p class="subtitle">Buy smart, sell more, and maximize profits</p>
+                </div>
+            </div>
+        </div>
+        <div class="cta-container">
+            <a href="#features" class="cta-button cta-primary">Try Demo</a>
+            <a href="#about" class="cta-button cta-secondary">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Features Section with Tabs -->
+    <section class="features" id="features">
+        <h2 class="section-title">Core Features</h2>
+        <div class="features-container">
+            <div class="feature-tabs">
+                <div class="tab-item active" data-tab="prediction">
+                    <span class="tab-icon">📈</span>
+                    <span>Smart Prediction</span>
+                </div>
+                <div class="tab-item" data-tab="waste">
+                    <span class="tab-icon">🗑️</span>
+                    <span>Waste Reduction</span>
+                </div>
+                <div class="tab-item" data-tab="sales">
+                    <span class="tab-icon">💰</span>
+                    <span>Boost Sales</span>
+                </div>
+                <div class="tab-item" data-tab="analytics">
+                    <span class="tab-icon">📊</span>
+                    <span>Analytics</span>
+                </div>
+                <div class="tab-item" data-tab="integration">
+                    <span class="tab-icon">🔗</span>
+                    <span>Easy Integration</span>
+                </div>
+            </div>
+            <div class="feature-content">
+                <div class="content-panel active" id="prediction">
+                    <h3>AI-Powered Forecasting</h3>
+                    <p>
+                        Our predictive model analyzes your sales and inventory data to
+                        forecast the quantity of each product you will need in the
+                        upcoming months. This helps you avoid overstocking, minimize
+                        waste, and ensure that your customers always find their favorite
+                        items available.
+                    </p>
+                    <ul class="feature-list">
+                        <li>Accurate demand predictions</li>
+                        <li>Month-by-month forecasts</li>
+                        <li>Helps optimize inventory</li>
+                        <li>Supports decision making</li>
+                    </ul>
+                </div>
+                <div class="content-panel" id="waste">
+                    <h3>Minimize Waste</h3>
+                    <p>
+                        Reduce unsold products and spoilage by buying only what is
+                        necessary, saving costs and promoting sustainability. Our system
+                        provides clear insights into potential excess stock and helps you
+                        plan smarter purchases every week.
+                    </p>
+                    <ul class="feature-list">
+                        <li>Reduce unsold goods</li>
+                        <li>Lower operational costs</li>
+                        <li>Eco-friendly approach</li>
+                        <li>Optimize resource usage</li>
+                    </ul>
+                </div>
+                <div class="content-panel" id="sales">
+                    <h3>Maximize Sales</h3>
+                    <p>
+                        Ensure popular products are always available for your customers.
+                        Our predictive system identifies high-demand items and suggests
+                        optimal purchase quantities. This prevents lost sales
+                        opportunities and allows your business to maximize revenue
+                        efficiently.
+                    </p>
+                    <ul class="feature-list">
+                        <li>Prevent missed sales</li>
+                        <li>Identify high-demand products</li>
+                        <li>Increase customer satisfaction</li>
+                        <li>Smart stock recommendations</li>
+                    </ul>
+                </div>
+                <div class="content-panel" id="analytics">
+                    <h3>Insightful Analytics</h3>
+                    <p>
+                        Visualize trends, monitor sales performance, and track inventory
+                        levels with interactive dashboards. Our analytics tools help you
+                        make informed decisions, optimize stock, and plan marketing
+                        strategies based on real-time data.
+                    </p>
+                    <ul class="feature-list">
+                        <li>Interactive dashboards</li>
+                        <li>Monthly and weekly reports</li>
+                        <li>Track performance metrics</li>
+                        <li>Support strategic decisions</li>
+                    </ul>
+                </div>
+                <div class="content-panel" id="integration">
+                    <h3>Easy Integration</h3>
+                    <p>
+                        Seamlessly connect with your existing POS systems, inventory
+                        software, and other tools. The platform supports CSV
+                        import/export, cloud or local use, and provides API access for
+                        developers to integrate custom solutions.
+                    </p>
+                    <ul class="feature-list">
+                        <li>POS system compatible</li>
+                        <li>CSV import/export</li>
+                        <li>Simple setup process</li>
+                        <li>Cloud-based or local use</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    <!-- Forecast Example Section -->
+    <section class="forecast" id="forecast">
+        <h2 class="section-title">Forecast Example</h2>
+        <div class="forecast-content">
+        <p>
+            BakeWise predicts monthly demand for bakery products. Solid bars represent historical sales,
+            while dashed or transparent bars show forecasted demand for future months.
+        </p>
+    </div>
+        <div class="chart-container" style="width: 90%; max-width: 900px; margin: 40px auto;">
+            <canvas id="forecastChart"></canvas>
+        </div>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+    const ctx = document.getElementById('forecastChart').getContext('2d');
+    
+    // Months
+    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'];
+    
+    // Historical data
+    const croissantsData = [120, 145, 130, 160];
+    const muffinsData = [90, 85, 100, 95];
+    const breadData = [150, 160, 155, 170];
+    
+    // Último índice com dados históricos
+    const currentMonthIndex = croissantsData.length - 1; // 3 (Abril)
+    
+    // Função para gerar forecast
+    function generateForecast(lastValue, monthsAhead) {
+        const forecast = [];
+        let value = lastValue;
+        for(let i=0; i<monthsAhead; i++){
+            value = Math.max(50, Math.round(value * (0.9 + Math.random()*0.2))); // random ±10%
+            forecast.push(value);
+        }
+        return forecast;
+    }
+    
+    const croissantsForecast = generateForecast(croissantsData[croissantsData.length-1], months.length - croissantsData.length);
+    const muffinsForecast = generateForecast(muffinsData[muffinsData.length-1], months.length - muffinsData.length);
+    const breadForecast = generateForecast(breadData[breadData.length-1], months.length - breadData.length);
+    
+    // Unir histórico + forecast
+    const croissantsFull = croissantsData.concat(croissantsForecast);
+    const muffinsFull = muffinsData.concat(muffinsForecast);
+    const breadFull = breadData.concat(breadForecast);
+    
+    // Função para cores
+    function getColors(data, baseColor){
+        return data.map((_,i) => {
+            if(i <= currentMonthIndex) return baseColor; // histórico
+            return baseColor.replace('1)', '0.3)');      // forecast (transparente)
+        });
+    }
+    
+    // Criar gráfico
+    const forecastChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: months,
+            datasets: [
+                {
+                    label: 'Croissants',
+                    data: croissantsFull,
+                    backgroundColor: getColors(croissantsFull, 'rgba(255,140,0,1)'),
+                    borderColor: '#FF8C00',
+                    borderWidth: 1
+                },
+                {
+                    label: 'Muffins',
+                    data: muffinsFull,
+                    backgroundColor: getColors(muffinsFull, 'rgba(255,69,0,1)'),
+                    borderColor: '#FF4500',
+                    borderWidth: 1
+                },
+                {
+                    label: 'Bread',
+                    data: breadFull,
+                    backgroundColor: getColors(breadFull, 'rgba(255,99,71,1)'),
+                    borderColor: '#FF6347',
+                    borderWidth: 1
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: { position: 'top' },
+                title: {
+                    display: true,
+                    text: 'Monthly Product Demand: Historical vs Forecast'
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function(context){
+                            const monthIndex = context.dataIndex;
+                            const isForecast = monthIndex > currentMonthIndex;
+                            return context.dataset.label + ': ' + context.raw + (isForecast ? ' (Forecast)' : ' (Actual)');
+                        }
+                    }
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    title: { display: true, text: 'Units Needed' }
+                },
+                x: {
+                    title: { display: true, text: 'Month' }
+                }
+            }
+        }
+    });
+    </script>    
+
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2 class="section-title">About BakeWise</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Revolutionizing Bakery Management</h2>
+                <p>
+                    At BakeWise, we harness the power of AI to help bakeries optimize their inventory and sales.
+                    Our platform analyzes historical data and predicts future product demand, ensuring you never overbuy
+                    or run out of popular items.
+                </p>
+                <p>
+                    Our mission is to reduce waste, save costs, and increase revenue by providing smart, data-driven
+                    insights.
+                    We help bakeries make informed decisions that benefit both their business and the environment.
+                </p>
+                <p>
+                    Founded by innovators passionate about technology and sustainability, BakeWise combines predictive
+                    analytics with easy-to-use tools.
+                    Join us in creating smarter bakeries and a more efficient future for the food industry.
+                </p>
+            </div>
+            <div class="about-visual">
+                <div class="about-graphic"></div>
+            </div>
+        </div>
+
+    <!-- Second row with reversed layout -->
+    <div class="about-content" style="margin-top: 80px">
+        <div class="about-visual">
+            <div class="about-graphic-alt">
+                <div class="hexagon"></div>
+                <div class="hexagon"></div>
+                <div class="hexagon"></div>
+            </div>
+        </div>
+        <div class="about-text">
+            <h2>Innovation at Every Level</h2>
+            <p>
+                At BakeWise, we are redefining bakery operations through intelligent forecasting.
+                Our predictive models anticipate demand for each product, helping bakeries optimize inventory, reduce
+                waste, and maximize profits.
+            </p>
+            <p>
+                Our platform combines AI and data analytics to provide actionable insights.
+                By understanding trends and patterns, bakeries can make informed purchasing decisions, ensuring they
+                never run out of popular items or overstock unsold products.
+            </p>
+            <p>
+                With BakeWise, bakeries embrace smart, sustainable operations.
+                We empower teams to focus on creativity and customer experience while our technology handles the
+                complexities of inventory management and sales forecasting.
+            </p>
+        </div>
+    </div>
+    </section>
+
+    <!-- Contact Section -->
+<section class="contact" id="contact">
+    <h2 class="section-title">Get In Touch</h2>
+    <div class="contact-container">
+        <div class="contact-form">
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required />
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+        <div class="contact-info">
+            <h3>Connect With Us</h3>
+            <div class="info-item">
+                <div class="info-icon">📧</div>
+                <div class="info-details">
+                    <h4>Email</h4>
+                    <p>contact@bakewise.ai</p>
+                </div>
+            </div>
+            <div class="info-item">
+                <div class="info-icon">📱</div>
+                <div class="info-details">
+                    <h4>Phone</h4>
+                    <p>+351 912 345 678</p>
+                </div>
+            </div>
+            <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-details">
+                    <h4>Location</h4>
+                    <p>Lisbon, Portugal</p>
+                </div>
+            </div>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3094.567234567!2d-9.14268508466455!3d38.73694667960385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19331fa0c6a6af%3A0x7a1b8a5f0d8c1b36!2sLisbon!5e0!3m2!1sen!2spt!4v1695231412345!5m2!1sen!2spt" 
+                    width="100%" 
+                    height="300" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <a href="#careers">Careers</a>
+            </div>
+            <p class="copyright">
+                © 2025 BakeWise. All rights reserved. Reducing waste, maximizing sales.
+            </p>
+        </div>
+    </footer>
+    <script src="bakewise.js"></script>
+</body>
+
+</html>
